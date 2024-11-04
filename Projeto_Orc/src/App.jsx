@@ -1,18 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CadastroJogadores from './pages/CadastroJogadores';
+import Jogo from './pages/Jogo';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    const [modoJogo, setModoJogo] = useState(''); 
+    const [jogadores, setJogadores] = useState({});
+    const [simboloJogador, setSimboloJogador] = useState('X');
 
-  return (
-    <>
-      <div className='App'>
-        <h1>Projeto Jogo da Velha</h1>
-      </div>
-    </>
-  )
-}
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage setModoJogo={setModoJogo} />} />
+                <Route
+                    path="/cadastro"
+                    element={
+                        <CadastroJogadores
+                            setJogadores={setJogadores}
+                            setSimboloJogador={setSimboloJogador}
+                            modoJogo={modoJogo}
+                        />
+                    }
+                />
+                <Route
+                    path="/jogo"
+                    element={<Jogo jogadores={jogadores} simboloJogador={simboloJogador} modoJogo={modoJogo} />}
+                />
+            </Routes>
+        </Router>
+    );
+};
 
-export default App
+export default App;
