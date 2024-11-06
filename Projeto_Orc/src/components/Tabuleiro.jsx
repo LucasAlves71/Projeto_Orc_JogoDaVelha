@@ -1,10 +1,15 @@
 import React from 'react';
-import Quadrado from './Quadrado';
 
-const Tabuleiro = ({quadrados, onClick}) => (
+const Tabuleiro = ({ quadrados, onClick, bloqueado }) => (
     <div className="tabuleiro">
         {quadrados.map((valor, index) => (
-            <Quadrado key={index} value={valor} onClick={() => onClick(index)} />
+            <div 
+                key={index} 
+                className="celula" 
+                onClick={() => !bloqueado && onClick(index)}
+            >
+                {valor}
+            </div>
         ))}
     </div>
 );

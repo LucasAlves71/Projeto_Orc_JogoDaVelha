@@ -1,22 +1,25 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const HomePage = ({setModoJogo}) => {
-    const navigate = useNavigate();
 
-    const escolherModo = (modo) => {
-        setModoJogo(modo); 
-        navigate('/cadastro'); 
-    };
-
-    return (
-        <div className="home-page">
-            <h1>Jogo da Velha</h1>
-            <p>Escolha o modo de jogo:</p>
-            <button onClick={() => escolherModo('singleplayer')}>Single-Player</button>
-            <button onClick={() => escolherModo('multiplayer')}>Multiplayer</button>
-        </div>
-    );
+const HomePage = ({ setModoJogo }) => {
+  return (
+    <div className="pagina-inicial">
+      <h1 className="titulo">JOGO DA VELHA</h1>
+      <div className="botoes-container">
+        <Link to="/cadastro">
+          <button className="botao" onClick={() => setModoJogo('singleplayer')}>
+            1 PLAYER
+          </button>
+        </Link>
+        <Link to="/cadastro">
+          <button className="botao" onClick={() => setModoJogo('multiplayer')}>
+            2 PLAYERS
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;

@@ -77,6 +77,17 @@ const Jogo = ({jogadores, simboloJogador, modoJogo}) => {
         setBloqueado(false);
     };
 
+    const reiniciarPlacar = () => {
+        setQuadrados(Array(9).fill(null));
+        setMensagem('');
+        setJogadorAtual(simboloJogador);
+        setBloqueado(false);
+        setVitorias({
+            [jogadores.jogador1.nome]: 0,
+            [jogadores.jogador2.nome]: 0,
+        });
+    };
+
     return (
         <div className="jogo">
             <h1>Jogo da Velha</h1>
@@ -89,6 +100,7 @@ const Jogo = ({jogadores, simboloJogador, modoJogo}) => {
             <Tabuleiro quadrados={quadrados} onClick={realizarJogada} bloqueado={bloqueado} />
             {mensagem && <p>{mensagem}</p>}
             {bloqueado && <p>Aguarde... O robô está jogando!</p>}
+            <button className='reiniciarPlacar' onClick={reiniciarPlacar}>Reiniciar Placar</button>
             <BotaoReiniciar onClick={reiniciarJogo} texto="Reiniciar Jogo" />
         </div>
     );

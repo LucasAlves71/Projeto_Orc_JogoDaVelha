@@ -22,13 +22,13 @@ const CadastroJogadores = ({setJogadores, setSimboloJogador, modoJogo}) => {
         <div className="cadastro-jogadores">
             <h1>Cadastro de Jogadores</h1>
             <InputJogador
-                label="Nome do Jogador 1"
+                label="Nome do Jogador 1 "
                 value={nomeJogador1}
                 onChange={(e) => setNomeJogador1(e.target.value)}
             />
             {modoJogo === 'multiplayer' && (
                 <InputJogador
-                    label="Nome do Jogador 2"
+                    label="Nome do Jogador 2 "
                     value={nomeJogador2}
                     onChange={(e) => setNomeJogador2(e.target.value)}
                 />
