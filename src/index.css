@@ -1,0 +1,169 @@
+body{
+  width: 1040px;
+  height: 620px;
+  background: radial-gradient(50% 50% at 50% 50%, #2D4253 0%, #4F7391 62.4%, #6493B9 100%);
+}
+
+.Titulo{
+  width: 1050px;
+  height: 141px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Blacklisted;
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 235px;
+  top: 120px;
+}
+
+.botoes-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 100px; 
+}
+
+.Botão{
+  width: 200px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 70px;
+  background: #21212B;
+  color: #FFF;
+  text-align: center;
+  font-family: Ground;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  margin: 0 25px;
+}
+
+.Primeira {
+  left: 500px; 
+  top: 400px; 
+}
+
+.Segunda {
+  left: calc(500px + 250px); 
+  top: 400px;
+}
+
+.Nome1 label{
+  color: #FFF;
+  text-align: center;
+  font-family: Ground;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 525px; 
+  top: 60px;
+  }
+
+.Nome1 input{
+  width: 400px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 203px;
+  background: #21212B;
+  color: #FFF;
+  text-align: center;
+  font-family: Heebo;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 560px; 
+  top: 135px;
+}
+
+.Nome2 label{
+  color: #FFF;
+  text-align: center;
+  font-family: Ground;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 525px; 
+  top: 200px;
+}
+
+.Nome2 input{
+  width: 400px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 203px;
+  background: #21212B;
+  color: #FFF;
+  text-align: center;
+  font-family: Heebo;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 560px; 
+  top: 285px;
+}
+
+.Escolha label{
+  color: #FFF;
+  text-align: center;
+  font-family: Ground;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left:510px;
+  top:375px;
+}
+
+.Escolha select{
+  position: absolute;
+  left: 750px;
+  top: 475px;
+}
+
+.cadastro-jogadores button{
+  position: absolute;
+  left: 560px;
+  top: 525px;
+  border-radius: 203px;
+  background: #21212B;
+  width: 400px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Ground;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jogo h1{
+  width: 706px;
+  height: 94.806px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Blacklisted;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left:400px;
+  top:5px;
+}
