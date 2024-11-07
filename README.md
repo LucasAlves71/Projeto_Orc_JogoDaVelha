@@ -30,7 +30,6 @@ Para executar o projeto localmente:
 3.  Instale as dependências:
     ```bash
       npm install
-
  
  4. Execute:
   ```bash
