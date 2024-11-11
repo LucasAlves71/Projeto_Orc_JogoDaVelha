@@ -1,8 +1,36 @@
-# React + Vite
+# Projeto Jogo Da Velha
+Esse repositório é destinado para realização do projeto do Jogo da Velha para o processo trainee 2024 da empresa Orc'estra Gamificação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descrição
 
-Currently, two official plugins are available:
+Este é um jogo da velha que permite que dois jogadores joguem alternadamente. O projeto utiliza React para a interface do usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
+
+- Interface interativa com React.
+- Alternância entre dois jogadores.
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+
+## 🖥️ Executando o Projeto
+
+Para executar o projeto localmente:
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/LucasAlves71/Projeto_Orc_JogoDaVelha.git
+
+2. Navegue até o diretório do projeto:
+   ```bash
+    cd Projeto_Orc_JogoDaVelha
+
+3.  Instale as dependências:
+    ```bash
+      npm install
+ 
+ 4. Execute:
+  ```bash
+      npm run dev
